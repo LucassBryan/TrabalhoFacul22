@@ -1,0 +1,53 @@
+contato.html
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Meu Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="centro">
+      <h1 class="logo">Seu Nome</h1>
+      <nav class="main-nav">
+        <a href="index.html">Sobre</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="centro">
+    <section>
+      <h2>Contato</h2>
+      <p>Preencha o formulário.</p>
+
+      <!-- Formulário visual: inputs nome, email e mensagem -->
+      <form id="contactForm" class="contact-form" onsubmit="return fakeSubmit(event);">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="centro">
+      <p>© 2025 Lucas Bryan</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
